@@ -1,0 +1,25 @@
+<h1> NEW SONG </h1>
+
+<%= form_with scope: :song, url: songs_path, local: true do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+    <p>
+    <%= form.label :album %><br>
+    <%= form.text_field :album %>
+  </p>
+<p>
+    <%= form.label :artist %><br>
+    <%= form.text_field :artist %>
+  </p>
+ 
+  <p>
+    <%= form.label :lyrics %><br>
+    <%= form.text_area :lyrics %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
